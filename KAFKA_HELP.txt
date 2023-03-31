@@ -1,0 +1,40 @@
+
+Kafka dir: go to
+C:\Kafka\kafka_2.12-3.2.3
+
+Zookeeper Start:
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Kafka server start:
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Create a new Topic:
+kafka-topics.sh --zookeeper localhost:2181 --topic Kafka_Example --create
+
+List Topics:
+kafka-topics.sh --zookeeper localhost:2181 --list
+
+Describing a topic:
+To describe a topic within the broker, use '-describe' command as:
+kafka-topics.sh -zookeeper localhost:2181 -describe --topic Kafka_Example
+
+Deleting a topic:
+To delete a topic, use '-delete' command. The delete command is used as: 'kafka-topics.sh -zookeeper localhost:2181 -topic<topic_name> --delete'
+
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic Kafka_Example --from-beginning
+
+
+kafka-console-producer.sh --broker-list localhost:9092 --topic Kafka_Example
+
+kafka-console-consumer.sh --zookeeper localhost:2181 --topic Kafka_Example
+
+
+
+C:\Kafka\kafka_2.12-3.2.3>bin/kafka-topics.sh --create --topic my-events --bootstrap-server localhost:9092
+
+kafka-topics.sh --create --zookeeper localhost:2181 --topic Kafka_Example 
+
+
+**************************************************** URL **************************************************************
+https://www.javatpoint.com/creating-kafka-topics
+https://www.geeksforgeeks.org/how-to-install-and-run-apache-kafka-on-windows/
