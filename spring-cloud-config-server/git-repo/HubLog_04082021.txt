@@ -1,0 +1,662 @@
+2021-08-04 15:30:09.987  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckScheduleUpdate],methods=[POST]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.updateHealthCheckSchedule(java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckCatalog],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckCatalog(org.springframework.ui.Model,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest)
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckSchedule],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckSchedule(org.springframework.ui.Model,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckSubPartStatus/{applicationCd}],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.viewSopSubPartStatus(java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckSubPartStatusAll],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.viewSubPartStatusAll(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hcUpdateScheduleView],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.viewHCScheduleUpdate(org.springframework.ui.Model,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.988  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckAddNewRow],methods=[POST]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckAddNewRow(java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.989  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckSaveSchedule],methods=[POST]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckSaveScedule(java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],java.lang.String[],org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.989  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheck],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.viewHealthCheck(org.springframework.ui.Model,javax.servlet.http.HttpSession,javax.servlet.http.HttpServletRequest) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.989  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/healthCheckAddSchedule],methods=[GET]}" onto public java.lang.String com.fabric.amcoe.hc.controller.HealthCheckController.viewHCSheduleAdd(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws com.fabric.amcoe.utility.AmcoeException
+2021-08-04 15:30:09.989  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.fabric.controller.AppController.sayHello()
+2021-08-04 15:30:09.990  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/topics/{id}]}" onto public com.fabric.controller.topic.Topics com.fabric.controller.topic.TopicController.getTopic(java.lang.String)
+2021-08-04 15:30:09.990  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/topics],methods=[POST]}" onto public void com.fabric.controller.topic.TopicController.addTopic(com.fabric.controller.topic.Topics)
+2021-08-04 15:30:09.990  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/topics]}" onto public java.util.List<com.fabric.controller.topic.Topics> com.fabric.controller.topic.TopicController.getAllTopics()
+2021-08-04 15:30:09.990  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/topics/{id}],methods=[PUT]}" onto public void com.fabric.controller.topic.TopicController.updateTopic(com.fabric.controller.topic.Topics,java.lang.String)
+2021-08-04 15:30:09.991  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/topics/{id}],methods=[DELETE]}" onto public void com.fabric.controller.topic.TopicController.deleteTopic(java.lang.String)
+2021-08-04 15:30:09.992  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-08-04 15:30:09.992  INFO 5624 --- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-08-04 15:30:10.002  INFO 5624 --- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-04 15:30:10.002  INFO 5624 --- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-04 15:30:10.017  INFO 5624 --- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-08-04 15:30:10.191  INFO 5624 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-08-04 15:30:10.317  INFO 5624 --- [  restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-08-04 15:30:10.615  INFO 5624 --- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 5573 (http)
+2021-08-04 15:30:10.619  INFO 5624 --- [  restartedMain] com.fabric.MyJavaApp                     : Started MyJavaApp in 19.422 seconds (JVM running for 9108.279)
+2021-08-04 15:51:32.443  INFO 5624 --- [nio-5573-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-08-04 15:51:32.444  INFO 5624 --- [nio-5573-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-08-04 15:51:32.454  INFO 5624 --- [nio-5573-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 10 ms
+2021-08-04 15:52:08.920  INFO 5624 --- [nio-5573-exec-2] c.f.amcoe.controller.LoginController     : loginCheck() Start
+2021-08-04 15:52:09.649  INFO 5624 --- [nio-5573-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+authAry = [Ljava.lang.String;@2aa631
+userDTO --> UserName: wmouser, Passwd: wmo123
+2021-08-04 15:52:11.843  INFO 5624 --- [nio-5573-exec-2] c.f.amcoe.controller.LoginController     : loginCheck() Start
+2021-08-04 15:52:11.857  INFO 5624 --- [nio-5573-exec-4] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:52:36.924  INFO 5624 --- [nio-5573-exec-7] c.f.a.controller.DashboardController     : getAccessCount() start
+App List in controller 1
+startDate = 1970-01-01, endDate = 2021-08-04
+In Controller sortedDTOList = 3
+2021-08-04 15:53:03.194  INFO 5624 --- [io-5573-exec-10] c.f.amcoe.controller.LoginController     : programOverview() Start
+2021-08-04 15:53:54.969  INFO 5624 --- [nio-5573-exec-1] c.f.a.h.c.HealthCheckController          : viewHealthCheck() start
+App List in controller 1
+2021-08-04 15:53:54.971  INFO 5624 --- [nio-5573-exec-1] c.f.a.h.c.HealthCheckController          : fetchValues() Start
+2021-08-04 15:53:55.001  INFO 5624 --- [nio-5573-exec-1] c.f.amcoe.hc.repository.HealthCheckJDBC  : getHCDataForDashboard() Start
+SQL Query: select health_chk_id,cluster_id ,project_id ,recipe_id ,application_cd, category_id ,updated_time , result, hc_schedule_id, hc_schedule_type, sop_name, sop_subpart, sop_subpart_scenario, comments from health_check_status where updated_time <= '2021-08-04 23:59:00'
+2021-08-04 15:53:55.001  INFO 5624 --- [nio-5573-exec-1] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+In Controller healthCheckStatusDTOList = 3
+In FetchValues() - mainMetricsDTOList 2
+autoSuccessRatio in controller 66.7, sCount 1.0E-323, autoExe 1.5E-323
+2021-08-04 15:54:09.227  INFO 5624 --- [nio-5573-exec-6] c.f.a.h.c.HealthCheckController          : healthCheckCatalog() start
+2021-08-04 15:54:45.526  INFO 5624 --- [nio-5573-exec-8] c.f.a.h.c.HealthCheckController          : getAccessCount() start
+2021-08-04 15:54:47.213 ERROR 5624 --- [nio-5573-exec-8] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.hc.dto.HealthCheckScheduleDTO.<init>(HealthCheckScheduleDTO.java:44) ~[classes/:na]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl$$Lambda$93/13306475.apply(Unknown Source) ~[na:na]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_25]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:512) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502) ~[na:1.8.0_25]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_25]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_25]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl.findHealthCheckSchedule(UserServiceImpl.java:82) ~[classes/:na]
+	at com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckSchedule(HealthCheckController.java:248) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 15:54:47.283  INFO 5624 --- [nio-5573-exec-9] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:54:54.190  INFO 5624 --- [io-5573-exec-10] c.f.a.h.c.HealthCheckController          : getAccessCount() start
+2021-08-04 15:54:55.766 ERROR 5624 --- [io-5573-exec-10] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.hc.dto.HealthCheckScheduleDTO.<init>(HealthCheckScheduleDTO.java:44) ~[classes/:na]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl$$Lambda$93/13306475.apply(Unknown Source) ~[na:na]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_25]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:512) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502) ~[na:1.8.0_25]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_25]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_25]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl.findHealthCheckSchedule(UserServiceImpl.java:82) ~[classes/:na]
+	at com.fabric.amcoe.hc.controller.HealthCheckController.healthCheckSchedule(HealthCheckController.java:248) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 15:54:56.187  INFO 5624 --- [nio-5573-exec-9] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:55:02.875  INFO 5624 --- [nio-5573-exec-5] c.f.a.h.c.HealthCheckController          : viewHealthCheckMonitoring() start
+2021-08-04 15:55:02.875  INFO 5624 --- [nio-5573-exec-5] c.f.amcoe.hc.repository.HealthCheckJDBC  : getApplicationStatus() Start
+SQL Query: with scenario_result as
+	(select * from
+	(select *, 
+	rank() over (partition by health_chk_id order by updated_time desc) as r_datetime 
+	from health_check_status)
+	temp where r_datetime = 1)
+	select application_cd, cluster_id, project_id, recipe_id, 
+	case when cnt_res > 1 then 'Partial Success'
+		 when cnt_res = 1 then (select distinct result from scenario_result where application_cd = tbl2.application_cd)
+		else 'No run' 
+		end as result 
+	from (		
+		select application_cd, cluster_id, project_id, recipe_id, 
+		count(distinct result) as cnt_res 
+		from scenario_result group by application_cd, cluster_id, project_id, recipe_id
+		) as tbl2
+2021-08-04 15:55:02.876  INFO 5624 --- [nio-5573-exec-5] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+2021-08-04 15:55:20.726  INFO 5624 --- [nio-5573-exec-9] c.f.a.h.c.HealthCheckController          : viewSopSubPartStatus() start
+2021-08-04 15:55:20.726  INFO 5624 --- [nio-5573-exec-9] c.f.amcoe.hc.repository.HealthCheckJDBC  : getSubpartStatusForApp() Start
+SQL Query: with scenario_result as
+	(select * from
+	(select *, 
+	rank() over (partition by health_chk_id order by updated_time desc) as r_datetime 
+	from health_check_status)
+	temp where r_datetime = 1)
+	select application_cd, cluster_id, project_id, recipe_id, sop_subpart,
+	case when cnt_res > 1 then 'Partial Success'
+		 when cnt_res = 1 then (select distinct result from scenario_result where sop_subpart = tbl2.sop_subpart)
+		else 'No run' 
+		end as result 
+	from (		
+		select application_cd, cluster_id, project_id, recipe_id, sop_subpart,
+		count(distinct result) as cnt_res 
+		from scenario_result group by application_cd, cluster_id, project_id, recipe_id, sop_subpart
+		) as tbl2 where application_cd= ?
+2021-08-04 15:55:20.726  INFO 5624 --- [nio-5573-exec-9] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+applicationCd: APP01, healthCheckStatusDTOList: 1, ProjectId: WMO
+2021-08-04 15:56:57.315  INFO 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : viewSubpartScenarioStatus() start
+2021-08-04 15:56:57.316  INFO 5624 --- [nio-5573-exec-7] c.f.amcoe.hc.repository.HealthCheckJDBC  : getSubpartStatusForApp() Start
+SQL Query: select health_chk_id, cluster_id ,project_id ,recipe_id ,application_cd, category_id ,updated_time, result , hc_schedule_id, hc_schedule_type, sop_name, sop_subpart, sop_subpart_scenario, comments from health_check_status where application_cd=? AND sop_subpart=? order by updated_time desc
+2021-08-04 15:56:57.316  INFO 5624 --- [nio-5573-exec-7] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+2021-08-04 15:57:13.452  INFO 5624 --- [nio-5573-exec-3] c.f.a.h.c.HealthCheckController          : viewSubPartStatusAll() start
+2021-08-04 15:57:13.453  INFO 5624 --- [nio-5573-exec-3] c.f.amcoe.hc.repository.HealthCheckJDBC  : getAllSubpartStatus() Start
+SQL Query: with scenario_result as
+	(select * from
+	(select *, 
+	rank() over (partition by health_chk_id order by updated_time desc) as r_datetime 
+	from health_check_status)
+	temp where r_datetime = 1)
+	select application_cd, cluster_id, project_id, recipe_id, sop_subpart,
+	case when cnt_res > 1 then 'Partial Success'
+		 when cnt_res = 1 then (select distinct result from scenario_result where sop_subpart = tbl2.sop_subpart)
+		else 'No run' 
+		end as result 
+	from (		
+		select application_cd, cluster_id, project_id, recipe_id, sop_subpart,
+		count(distinct result) as cnt_res 
+		from scenario_result group by application_cd, cluster_id, project_id, recipe_id, sop_subpart
+		) as tbl2 
+2021-08-04 15:57:13.453  INFO 5624 --- [nio-5573-exec-3] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+2021-08-04 15:57:22.617  INFO 5624 --- [io-5573-exec-10] c.f.a.h.c.HealthCheckController          : viewSubpartScenarioStatus() start
+2021-08-04 15:57:22.618  INFO 5624 --- [io-5573-exec-10] c.f.amcoe.hc.repository.HealthCheckJDBC  : getSubpartStatusForApp() Start
+SQL Query: select health_chk_id, cluster_id ,project_id ,recipe_id ,application_cd, category_id ,updated_time, result , hc_schedule_id, hc_schedule_type, sop_name, sop_subpart, sop_subpart_scenario, comments from health_check_status where application_cd=? AND sop_subpart=? order by updated_time desc
+2021-08-04 15:57:22.618  INFO 5624 --- [io-5573-exec-10] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+2021-08-04 15:57:32.241  INFO 5624 --- [nio-5573-exec-8] c.f.a.h.c.HealthCheckController          : viewSubPartScenarioStatusAll() start
+2021-08-04 15:57:32.241  INFO 5624 --- [nio-5573-exec-8] c.f.amcoe.hc.repository.HealthCheckJDBC  : getAllSubpartScenarioStatus() Start
+SQL Query: select health_chk_id, cluster_id ,project_id ,recipe_id ,application_cd, category_id ,updated_time, result , hc_schedule_id, hc_schedule_type, sop_name, sop_subpart, sop_subpart_scenario, comments from health_check_status order by updated_time desc
+2021-08-04 15:57:32.241  INFO 5624 --- [nio-5573-exec-8] c.f.amcoe.hc.repository.HealthCheckJDBC  : getConnection() Start
+2021-08-04 15:57:49.492  INFO 5624 --- [nio-5573-exec-4] c.f.a.h.c.HealthCheckController          : viewHCScheduleUpdate() start
+2021-08-04 15:57:50.987 ERROR 5624 --- [nio-5573-exec-4] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.hc.dto.HealthCheckScheduleDTO.<init>(HealthCheckScheduleDTO.java:44) ~[classes/:na]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl$$Lambda$93/13306475.apply(Unknown Source) ~[na:na]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_25]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:512) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:502) ~[na:1.8.0_25]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708) ~[na:1.8.0_25]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:1.8.0_25]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499) ~[na:1.8.0_25]
+	at com.fabric.amcoe.serviceImpl.UserServiceImpl.findHealthCheckSchedule(UserServiceImpl.java:82) ~[classes/:na]
+	at com.fabric.amcoe.hc.controller.HealthCheckController.viewHCScheduleUpdate(HealthCheckController.java:603) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 15:57:51.049  INFO 5624 --- [nio-5573-exec-5] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:58:22.823  INFO 5624 --- [nio-5573-exec-9] c.f.a.h.c.HealthCheckController          : viewBRITFlowchart() start
+2021-08-04 15:58:24.775 ERROR 5624 --- [nio-5573-exec-9] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.brit.ruleengine.BRITRuleEngine.calculateAggDAStatusForFlowChart(BRITRuleEngine.java:151) ~[classes/:na]
+	at com.fabric.amcoe.brit.controller.BRITController.viewBRITFlowchart(BRITController.java:752) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 15:58:24.949  INFO 5624 --- [nio-5573-exec-7] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:58:29.228  INFO 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : viewBRITFlowchart() start
+2021-08-04 15:58:31.123 ERROR 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.brit.ruleengine.BRITRuleEngine.calculateAggDAStatusForFlowChart(BRITRuleEngine.java:151) ~[classes/:na]
+	at com.fabric.amcoe.brit.controller.BRITController.viewBRITFlowchart(BRITController.java:752) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 15:58:31.220  INFO 5624 --- [nio-5573-exec-4] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 15:59:27.032  INFO 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : viewSLStatusTracking() start
+2021-08-04 15:59:27.064  INFO 5624 --- [nio-5573-exec-7] c.f.amcoe.brit.repository.BRITJDBCImpl   : getHCDataForDashboard() Start
+SQL Query: select racesl_run_id, sl_id, status_current,	status_SLA31, act_start_time, act_compl_time, elapsed_time, action_code, remark from cdw_racesl_status
+2021-08-04 15:59:27.065  INFO 5624 --- [nio-5573-exec-7] c.f.amcoe.brit.repository.BRITJDBCImpl   : getConnection() Start
+2021-08-04 16:00:12.741  INFO 5624 --- [nio-5573-exec-2] c.f.a.h.c.HealthCheckController          : viewBRITFlowchart() start
+2021-08-04 16:00:14.562 ERROR 5624 --- [nio-5573-exec-2] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.brit.ruleengine.BRITRuleEngine.calculateAggDAStatusForFlowChart(BRITRuleEngine.java:151) ~[classes/:na]
+	at com.fabric.amcoe.brit.controller.BRITController.viewBRITFlowchart(BRITController.java:752) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 16:00:14.642  INFO 5624 --- [nio-5573-exec-5] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 16:00:20.877  INFO 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : viewDAStatusTracking() start
+2021-08-04 16:00:22.736 ERROR 5624 --- [nio-5573-exec-7] c.f.a.brit.ruleengine.BRITRuleEngine     : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.brit.ruleengine.BRITRuleEngine.calculateDAStatusAndColorCode(BRITRuleEngine.java:41) ~[classes/:na]
+	at com.fabric.amcoe.brit.controller.BRITController.viewDAStatusTracking(BRITController.java:75) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+strArrivalTimeMF =2021-07-27 14:10
+strArrivalTimeUnix =2021-07-27 14:19
+2021-08-04 16:01:55.380  INFO 5624 --- [nio-5573-exec-4] c.f.a.h.c.HealthCheckController          : viewBRITFlowchart() start
+2021-08-04 16:01:57.300 ERROR 5624 --- [nio-5573-exec-4] c.f.a.h.c.HealthCheckController          : Error found in application
+
+java.lang.NullPointerException: null
+	at com.fabric.amcoe.brit.ruleengine.BRITRuleEngine.calculateAggDAStatusForFlowChart(BRITRuleEngine.java:151) ~[classes/:na]
+	at com.fabric.amcoe.brit.controller.BRITController.viewBRITFlowchart(BRITController.java:752) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0_25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_25]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_25]
+
+2021-08-04 16:01:57.368  INFO 5624 --- [nio-5573-exec-6] c.f.amcoe.controller.LoginController     : homeView() Start
+2021-08-04 16:07:04.747  INFO 5624 --- [nio-5573-exec-7] c.f.a.h.c.HealthCheckController          : viewJobStatusTracking() start
